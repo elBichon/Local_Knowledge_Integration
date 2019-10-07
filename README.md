@@ -30,7 +30,6 @@ The project is to extract as much info as possible from a livestream through a p
 
 ## Workflow:
 1. Connecting to the ip webcam through your local network
-2. The image flow will be processed. At a frequency you provide, the curent frame will be saved as an image
 
 ## How to use:
 
