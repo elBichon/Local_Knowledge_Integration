@@ -18,7 +18,7 @@ The project is to extract as much info as possible from a livestream through a p
 - [x] Interfacing with android ip webcam on smartphone through python
 - [x] Creating a picture for each of the detected boxes
 - [x] For the face picture make it go through a cnn to extract emotion
-- [ ] Counting number of persons going through (in case of a building apply recognition for people going in and out)
+- [x] Counting number of persons going through (in case of a building apply recognition for people going in and out)
 - [ ] Extracting age, gender and other relevant features
 - [ ] Tone analysis
 - [ ] Text to speech
