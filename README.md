@@ -19,6 +19,7 @@ The project is to extract as much info as possible from a livestream through a p
 - [x] Creating a picture for each of the detected boxes
 - [x] For the face picture make it go through a cnn to extract emotion
 - [x] Counting number of persons going through (in case of a building apply recognition for people going in and out)
+- [ ] Correction of parralax
 - [ ] Extracting age, gender and other relevant features
 - [ ] Tone analysis
 - [ ] Text to speech
