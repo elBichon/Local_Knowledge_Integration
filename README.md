@@ -50,7 +50,6 @@ The project is to extract as much info as possible from a livestream through a p
 - [ ] Receding_Hairline
 - [ ] Rosy_Cheeks
 - [ ] Sideburns
-- [ ] Smiling
 - [ ] Tone analysis
 - [ ] Text to speech
 - [ ] Novelty detection
