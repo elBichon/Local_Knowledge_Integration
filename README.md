@@ -20,14 +20,42 @@ The project is to extract as much info as possible from a livestream through a p
 - [x] For the face picture make it go through a cnn to extract emotion
 - [x] Counting number of persons going through (in case of a building apply recognition for people going in and out)
 - [ ] Correction of parralax
-- [ ] Extracting age, gender and other relevant features
+- [ ] Extracting age
+- [ ] Extracting gender
+- [ ] 5_o_Clock_Shadow
+- [ ] Arched_Eyebrows 
+- [ ] Bags_Under_Eyes
+- [ ] Bald
+- [ ] Bangs 
+- [ ] Big_Lips 
+- [ ] Big_Nose 
+- [ ] Black_Hair 
+- [ ] Blond_Hair
+- [ ] Brown_Hair 
+- [ ] Bushy_Eyebrows 
+- [ ] Chubby
+- [ ] Double_Chin  
+- [ ] Eyeglasses 
+- [ ] Goatee
+- [ ] Gray_Hair 
+- [ ] Heavy_Makeup 
+- [ ] High_Cheekbones
+- [ ] Mouth_Slightly_Open 
+- [ ] Mustache
+- [ ] Narrow_Eyes 
+- [ ] No_Beard    
+- [ ] Oval_Face 
+- [ ] Pale_Skin 
+- [ ] Pointy_Nose 
+- [ ] Receding_Hairline
+- [ ] Rosy_Cheeks
+- [ ] Sideburns
+- [ ] Smiling
 - [ ] Tone analysis
 - [ ] Text to speech
 - [ ] Novelty detection
 - [ ] Real time insight and actions given certain triggers
 - [ ] Post time analysis
-
-
 
 ## Workflow:
 1. Connecting to the ip webcam through your local network
