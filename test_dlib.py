@@ -11,7 +11,12 @@ import argparse
 import sys
 import itertools
 import dlib
+from pynput import mouse
 
+def on_click(x, y, button, pressed):
+    print('{0} at {1}'.format(
+        'Pressed' if pressed else 'Released',
+        (x, y)))
 
 
 
@@ -38,11 +43,31 @@ ip = args.ip_address
 url = "http://"+ip+":8080/shot.jpg"
 
 if __name__ == "__main__":
+    img_resp = requests.get(url)
+    img_arr = np.array(bytearray(img_resp.content), dtype=np.uint8)
+    img = cv2.imdecode(img_arr,-1)
+    img = white_balance(img)
+    coordinates = []
+    i = 0
+    while i < 4:
+        cv2.imshow('my webcam', img)
+        lis2 = mouse.Listener(on_click=on_click)
+        coordinates.append(lis2)
+        i += 1
     while True:
         img_resp = requests.get(url)
         img_arr = np.array(bytearray(img_resp.content), dtype=np.uint8)
         img = cv2.imdecode(img_arr,-1)
         img = white_balance(img)
+        coordinates = []
+        cv2.circle(img, coordinates[0], 5, (0, 0, 255), -1)
+        cv2.circle(img, coordinates[1], 5, (0, 0, 255), -1)
+        cv2.circle(img, coordinates[2], 5, (0, 0, 255), -1)
+        cv2.circle(img, coordinates[3], 5, (0, 0, 255), -1)
+        pts1 = np.float32([coordinates[0], coordinates[1], coordinates[2], coordinates[3]])
+        pts2 = np.float32([[0, 0], [500, 0], [0, 600], [500, 600]])
+        matrix = cv2.getPerspectiveTransform(pts1, pts2)
+        img = cv2.warpPerspective(frame, matrix, (500, 600))
         detector = dlib.get_frontal_face_detector()
         color_green = (0,255,0)
         line_width = 3
