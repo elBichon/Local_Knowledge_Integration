@@ -23,6 +23,7 @@ The project is to extract as much info as possible from a livestream through a p
 - [ ] Extracting gender
 - [ ] Tone analysis
 - [x] Text to speech
+- [ ] Speakerpose analysis
 - [ ] Novelty detection
 - [ ] Real time insight and actions given certain triggers
 - [ ] Post time analysis
